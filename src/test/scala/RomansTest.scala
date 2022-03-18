@@ -4,6 +4,10 @@ import org.scalatest.FunSuite
 
 class RomansTest extends FunSuite {
   test("Romans.roman") {
-    assert(Romans.roman(1) === "I")
+    val arabic: List[Int] = List(1,2,3)
+    val roman: List[String] = List("I", "II", "III")
+    for((a,r) <- arabic zip roman) {
+      assert(Romans.roman(a) === r)
+    }
   }
 }
