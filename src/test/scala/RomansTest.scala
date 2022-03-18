@@ -6,7 +6,7 @@ import scala.language.postfixOps
 
 class RomansTest extends FunSuite {
   test("Romans.roman") {
-    val roman: List[String] = List("I", "II", "III", "IV", "V", "VI")
+    val roman: List[String] = List("I", "II", "III", "IV", "V", "VI", "VII", "VIII")
     val arabic: List[Int] = 1 to roman.length toList;
     for((a,r) <- arabic zip roman) {
       assert(Romans.roman(a) === r)
